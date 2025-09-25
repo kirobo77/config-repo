@@ -1,6 +1,6 @@
 app:
   environment:
-    name: "Local Development"
+    name: "Local Development 2"
   message: "Hello from Local Environment!"
   database:
     max-connections: 10
