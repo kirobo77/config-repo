@@ -1,0 +1,20 @@
+app:
+  environment:
+    name: "Local Development"
+  message: "Hello from Local Environment!"
+  database:
+    max-connections: 10
+    connection-timeout: 5000
+spring:
+  datasource:
+    url: jdbc:h2:mem:localdb
+    username: sa
+    password: ""
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+logging:
+  level:
+    com.example: DEBUG
+    org.springframework.web: DEBUG

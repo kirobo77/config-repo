@@ -1,0 +1,15 @@
+app:
+  environment:
+    name: "Development Server"
+  message: "Hello from Development Environment!"
+  database:
+    max-connections: 15
+    connection-timeout: 8000
+spring:
+  datasource:
+    url: ${DEV_DATABASE_URL:jdbc:mysql://dev-db:3306/myapp}
+    username: ${DEV_DB_USERNAME:dev_user}
+    password: ${DEV_DB_PASSWORD:dev_password}
+logging:
+  level:
+    com.example: INFO
